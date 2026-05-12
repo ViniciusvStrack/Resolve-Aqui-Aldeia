@@ -1,78 +1,50 @@
-# 🔧 Resolve Aqui Aldeia
+# Resolve Aqui Aldeia
 
-Plataforma SaaS para conectar moradores de Aldeia (Recife-PE) com prestadores de serviços locais.
+O Resolve Aqui Aldeia é uma plataforma desenvolvida para facilitar a conexão entre clientes e profissionais de serviços gerais em Recife e região.
 
----
+A proposta do projeto é permitir que usuários encontrem profissionais confiáveis de forma rápida, organizada e segura, utilizando avaliações, categorias, localização e perfis personalizados.
 
-## 📁 Estrutura do Projeto
+## Funcionalidades
 
-```
-resolve-aqui-aldeia/
-├── backend/          → API Node.js + Express + MongoDB
-├── frontend/         → React + Bootstrap
-└── README.md
-```
+- Cadastro e login de profissionais
+- Sistema de autenticação JWT
+- Perfil profissional personalizado
+- Upload de fotos de serviços
+- Sistema de avaliações
+- Busca por categoria
+- Busca por bairro/localização
+- Planos para destaque de profissionais
+- Integração com banco de dados MongoDB
+- API REST com Node.js e Express
+- Front-end em React
 
----
+## Tecnologias Utilizadas
 
-## 🚀 Como rodar o projeto
+### Front-end
 
-### Pré-requisitos
-- Node.js 18+
-- MongoDB rodando localmente
-- Conta no Cloudinary (gratuita)
+- React
+- Vite
+- JavaScript
+- CSS
 
----
+### Back-end
 
-### 1. Backend
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Cloudinary
+- Stripe
 
-```bash
-cd backend
-npm install
-cp .env.example .env
-# Edite o .env com seus dados
-npm run dev
-```
+## Objetivo
 
-API disponível em: `http://localhost:5000`
+O principal objetivo do projeto é modernizar e facilitar a contratação de profissionais locais, oferecendo uma experiência mais segura tanto para clientes quanto para prestadores de serviço.
 
----
+## Status do Projeto
 
-### 2. Frontend
+🚧 Em desenvolvimento
 
-```bash
-cd frontend
-npm install
-npm start
-```
+## Autor
 
-App disponível em: `http://localhost:3000`
-
----
-
-## 📡 Rotas da API
-
-| Método | Rota | Descrição | Auth |
-|--------|------|-----------|------|
-| POST | /api/auth/registro | Cadastro do profissional | ❌ |
-| POST | /api/auth/login | Login | ❌ |
-| GET | /api/auth/eu | Meu perfil | ✅ |
-| GET | /api/profissionais | Listar (filtros: categoria, bairro) | ❌ |
-| GET | /api/profissionais/:id | Perfil público | ❌ |
-| POST | /api/profissionais/:id/avaliar | Avaliar profissional | ❌ |
-| PUT | /api/profissionais/meu-perfil | Editar perfil | ✅ |
-| POST | /api/profissionais/fotos | Upload de fotos | ✅ |
-
----
-
-## 💳 Planos
-
-| Plano | Preço | Fotos | Contatos/mês |
-|-------|-------|-------|--------------|
-| Grátis | R$ 0 | 3 | 5 |
-| Profissional | R$ 29/mês | 20 | Ilimitado |
-| Premium | R$ 49/mês | Ilimitado | Ilimitado |
-
----
-
-Feito com ❤️ em Recife — PE
+Desenvolvido por Vinicius Strack
